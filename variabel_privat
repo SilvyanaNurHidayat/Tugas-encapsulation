@@ -1,0 +1,87 @@
+class Person:
+    def __init__(self, tinggi, berat, warna_kulit, jenis_rambut, umur, nama):
+        self.__tinggi = tinggi
+        self.__berat = berat
+        self.__warna_kulit = warna_kulit
+        self.__jenis_rambut = jenis_rambut
+        self.__umur = umur
+        self.__nama = nama
+
+    # Getter dan Setter untuk tinggi
+    def get_tinggi(self):
+        return self.__tinggi
+
+    def set_tinggi(self, tinggi):
+        self.__tinggi = tinggi
+
+    # Getter dan Setter untuk berat
+    def get_berat(self):
+        return self.__berat
+
+    def set_berat(self, berat):
+        self.__berat = berat
+
+    # Getter dan Setter untuk warna_kulit
+    def get_warna_kulit(self):
+        return self.__warna_kulit
+
+    def set_warna_kulit(self, warna_kulit):
+        self.__warna_kulit = warna_kulit
+
+    # Getter dan Setter untuk jenis_rambut
+    def get_jenis_rambut(self):
+        return self.__jenis_rambut
+
+    def set_jenis_rambut(self, jenis_rambut):
+        self.__jenis_rambut = jenis_rambut
+
+    # Getter dan Setter untuk umur
+    def get_umur(self):
+        return self.__umur
+
+    def set_umur(self, umur):
+        self.__umur = umur
+
+    # Getter dan Setter untuk nama
+    def get_nama(self):
+        return self.__nama
+
+    def set_nama(self, nama):
+        self.__nama = nama
+
+    def duduk(self):
+        print(f"{self.__nama} sedang duduk ")
+
+    def berdiri(self):
+        print(f"{self.__nama} sedang berdiri ")
+
+    def berbicara(self):
+        print(f"{self.__nama} sedang berbicara")
+
+    def beraktivitas(self):
+        print(f"{self.__nama} sedang beraktivitas")
+
+    def berpikir(self):
+        print(f"{self.__nama} sedang berpikir ")
+
+
+my_person1 = Person(180, 70, "sawo matang", "keriting", 19, "Tejo")
+
+print(f"Nama saya {my_person1.get_nama()}")
+print(f"Umur saya {my_person1.get_umur()}")
+print(f"Tinggi saya {my_person1.get_tinggi()}")
+print(f"Berat saya {my_person1.get_berat()}")
+
+my_person2 = Person(170, 65, "kuning langsat", "lurus", 20, "Seno")
+print(f"Nama saya {my_person2.get_nama()}")
+print(f"Umur saya {my_person2.get_umur()}")
+print(f"Warna kulit saya {my_person2.get_warna_kulit()}")
+print(f"Saya berambut {my_person2.get_jenis_rambut()}")
+
+my_person2.duduk()
+my_person2.berbicara()
+my_person2.berpikir()
+
+my_person1.berdiri()
+my_person1.beraktivitas()
+my_person1.berbicara()
